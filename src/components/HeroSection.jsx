@@ -137,7 +137,7 @@ const HeroSection = () => {
     });
 
     return (
-        <div className='bg-[#1e1e1e] min-h-[calc(100vh-90px)] w-full p-4 md:p-8'>
+        <div className='bg-[#1e1e1e] min-h-[calc(100vh-90px)] w-full p-4 md:p-8' style={{ fontFamily: 'Bricolage Grotesque, sans-serif' }}>
             <div className="flex flex-col lg:flex-row gap-6 justify-center max-w-7xl mx-auto font-bricolage">
                 {/* Expense List Section */}
                 <div className="w-full lg:w-[55%] bg-[#2a2a2a] rounded-lg shadow-md p-6 flex flex-col border border-[#3a3a3a]">
@@ -257,7 +257,13 @@ const HeroSection = () => {
                                     ))}
                                 </div>
                             ) : (
-                                <div className='text-white text-center py-12'>No expenses found.</div>
+                                <div className='text-white text-center space-y-2 mt-4 md:space-y-3 md:mt-10'>
+                                    <p className='text-2xl md:text-3xl font-bold'>Looks Like You Haven't Added Any <span className='text-[#51d289]'>Expenses Yet.</span></p>
+                                    <p className='text-sm md:text-lg font-light'>No Worries, Just Hit The <span className='text-[#51d289]'> 'Add'</span> Button
+                                        To Get Started</p>
+                                    <BsCart2 className='md:size-13 size-7 md:mt-5 mx-auto mt-4' />
+
+                                </div>
                             )}
                         </div>
                     )}

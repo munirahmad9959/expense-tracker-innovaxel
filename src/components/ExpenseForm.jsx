@@ -20,7 +20,7 @@ const ExpenseForm = ({
           onClick={onClose}
           className="text-gray-400 hover:text-white transition-colors"
         >
-          <IoMdClose size={24} />
+          <IoMdClose size={24} className='cursor-pointer' />
         </button>
       </div>
 
@@ -111,10 +111,10 @@ export const EmptyFormState = ({ setIsFormOpen }) => {
     <div className="flex flex-col items-center justify-center h-full text-center p-8">
       <div className="relative mb-6">
         <div className="w-24 h-24 bg-[#333333] rounded-full flex items-center justify-center border-2 border-dashed border-[#4a4a4a]">
-          <BsPlusCircle size={36} className="text-gray-400" />
+          <BsPlusCircle size={36} className="text-gray-400 cursor-pointer hover:text-[#4a4a4a]" onClick={() => setIsFormOpen(true)}/>
         </div>
       </div>
-      <h3 className="text-xl font-bold text-white mb-2">Add New Expense</h3>
+      <h3 className="text-xl font-bold text-white mb-2 ">Add New Expense</h3>
       <p className="text-gray-400 mb-6">Track your spending by adding expenses with details like amount, category, and date.</p>
       <button
         onClick={() => setIsFormOpen(true)}
