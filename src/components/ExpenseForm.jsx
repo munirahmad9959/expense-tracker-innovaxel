@@ -118,7 +118,7 @@ export const EmptyFormState = ({ setIsFormOpen }) => {
       <p className="text-gray-400 mb-6">Track your spending by adding expenses with details like amount, category, and date.</p>
       <button
         onClick={() => setIsFormOpen(true)}
-        className="px-6 py-3 bg-[#3a3a3a] text-white rounded-lg font-medium flex items-center gap-2 hover:bg-[#4a4a4a] transition-all border border-[#4a4a4a]"
+        className="px-6 py-3 bg-[#3a3a3a] text-white rounded-lg font-medium flex items-center gap-2 hover:bg-[#4a4a4a] transition-all border border-[#4a4a4a] cursor-pointer"
       >
         <BsPlusCircle size={18} />
         <span>Create Expense</span>

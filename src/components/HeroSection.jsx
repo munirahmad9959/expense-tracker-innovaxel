@@ -159,12 +159,12 @@ const HeroSection = () => {
                                 {filterPanelOpen && (
                                     <div
                                         className="filter-panel fixed inset-0 z-40 flex items-start justify-end pt-[230px] md:absolute md:inset-auto md:right-0 md:mt-2 md:pt-0"
-                                        onClick={() => setFilterPanelOpen(false)} // Click outside to close
+                                        onClick={() => setFilterPanelOpen(false)} 
                                     >
                                         <div
                                             ref={filterPanelRef}
                                             className="bg-[#2e2e2e] rounded-lg shadow-lg border border-[#444] p-4 space-y-4 w-full max-w-xs mx-4 md:mx-0 md:w-64"
-                                            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the panel
+                                            onClick={(e) => e.stopPropagation()} 
                                         >
                                             <div>
                                                 <label className="text-white text-sm block mb-1">Category</label>
